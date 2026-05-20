@@ -18,13 +18,13 @@ def contact():
         return jsonify({"error": "Missing fields"}), 400
 
     resend.Emails.send({
-        "from": "portfolio@yourdomain.com",
-        "to": "you@youremail.com",        # where you want to receive emails
-        "subject": f"Portfolio message from {name}",
+        "from": "onboarding@resend.dev",
+        "to": "nana.amfobrobbey@gmail.com",        # where you want to receive emails
+        "subject": f"Testing Portfolio message from {name}",
         "html": f"<p><strong>From:</strong> {name} ({email})</p><p>{message}</p>"
     })
 
     return jsonify({"success": True})
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(host="0.0.0.0", port=5000)
