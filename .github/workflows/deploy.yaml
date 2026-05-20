@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_URL: https://portfolio-0hld.onrender.com
+          VITE_API_URL: https://portfolio-zwgm.onrender.com
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
