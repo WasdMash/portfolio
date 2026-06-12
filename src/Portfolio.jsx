@@ -285,7 +285,7 @@ const handleSend = async (e) => {
             {[
               { label: "GitHub", url: "https://github.com/WasdMash?tab=repositories" },
               { label: "LinkedIn", url: "https://www.linkedin.com/in/nana-amfo-brobbey-3424a1240/" },
-              { label: "Resume", url: "src/assets/cv.pdf" },
+              { label: "Curriculum Vitae / Resume", url: "/cv.pdf" },
             ].map(({ label, url }) => (
               <a key={label} href={url} target="_blank" rel="noopener noreferrer" className="btn-primary"
                 style={{ textDecoration: "none" }}>
