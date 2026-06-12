@@ -106,6 +106,11 @@ export default function Portfolio() {
 
 const handleSend = async (e) => {
   e.preventDefault();
+  //Should get the user to input all necessary data fields to prevent form submission issues
+  if (!formData.name || !formData.email || !formData.message) {
+    alert("Please fill in all fields.");
+    return;
+  }
   try {
     const res = await fetch(`${API_URL}/api/contact`, {
       method: "POST",
